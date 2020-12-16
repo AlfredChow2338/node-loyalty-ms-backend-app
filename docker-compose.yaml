@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build:
+        context: .
+        args:
+          - SCRIPT_NAME=prod_schedule
+    ports:
+      - "80:8081"
